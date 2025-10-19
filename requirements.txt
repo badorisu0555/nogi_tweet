@@ -1,0 +1,14 @@
+pandas
+numpy
+ipykernel
+tweepy
+requests
+bertopic
+sentence-transformers
+# sentence-transformersの実行に必要なライブラリ
+protobuf
+sentencepiece
+
+#bertopicに必要なライブラリ
+fugashi
+unidic-lite
