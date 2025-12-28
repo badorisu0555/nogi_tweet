@@ -5,6 +5,9 @@ tweepy
 requests
 bertopic
 sentence-transformers
+boto3
+langchain_aws
+langchain
 # sentence-transformersの実行に必要なライブラリ
 protobuf
 sentencepiece
