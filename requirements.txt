@@ -11,6 +11,10 @@ langchain
 emoji
 python-dotenv
 
+#API構築のためのライブラリ
+fastapi
+uvicorn
+
 # sentence-transformersの実行に必要なライブラリ
 protobuf
 sentencepiece
