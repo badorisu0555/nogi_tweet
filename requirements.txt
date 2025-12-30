@@ -9,6 +9,7 @@ boto3
 langchain_aws
 langchain
 emoji
+python-dotenv
 
 # sentence-transformersの実行に必要なライブラリ
 protobuf
