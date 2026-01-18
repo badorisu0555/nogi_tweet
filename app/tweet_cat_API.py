@@ -1,20 +1,21 @@
-import preprocessing as preprocessing
-import tweet_categorize as tweet_categorize
-import tweet_api as tweet_api
-from fastapi import FastAPI, UploadFile, File
+import app.preprocessing as preprocessing
+import app.tweet_categorize as tweet_categorize
+import app.tweet_api as tweet_api
+from fastapi import FastAPI, Query
 from fastapi.responses import JSONResponse
 
 app = FastAPI()
 
+"""
 @app.get("/")
 def read_root():
     return {"message": "Nogizaka46 Related Tweet Categorization API", "status": "healthy"}
+"""
+#query = "乃木坂46"
+#tweet_cnt = 10
 
-query = "乃木坂46"
-tweet_cnt = 10
-
-@app.post("/predict")
-async def main():
+@app.get("/predict")
+def main(query,tweet_cnt :int = Query(10, ge=1, le=100)):
     try:
         print("=======================ツイートの取得を開始します。=======================")
         save_file_path, all_tweets = tweet_api.get_tweet(query, tweet_cnt)

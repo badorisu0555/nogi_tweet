@@ -44,7 +44,7 @@ def save_tweets_to_json(all_tweets):
     return save_file_path
 
 # ツイート検索から保存までのメインの処理を行う関数
-def get_tweet(query="乃木坂46", tweet_cnt=10):
+def get_tweet(query, tweet_cnt):
     api_key = load_api_key()
     all_tweets = tweet_search(query, tweet_cnt,api_key)
     save_file_path = save_tweets_to_json(all_tweets)

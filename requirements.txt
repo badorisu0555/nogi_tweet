@@ -3,8 +3,6 @@ numpy
 ipykernel
 tweepy
 requests
-bertopic
-sentence-transformers
 boto3
 langchain_aws
 langchain
@@ -15,10 +13,4 @@ python-dotenv
 fastapi
 uvicorn
 
-# sentence-transformersの実行に必要なライブラリ
-protobuf
-sentencepiece
-
-#bertopicに必要なライブラリ
-fugashi
-unidic-lite
+pytest

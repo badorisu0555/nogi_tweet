@@ -44,7 +44,7 @@ def create_response(prompt_text,df_json):
 def categorize_tweets_with_LLM(df_json):
     load_api_key()
 
-    f = open("prompt.txt","r",encoding="utf-8")
+    f = open("app/prompt.txt","r",encoding="utf-8")
     prompt_text = f.read()
     response = create_response(prompt_text,df_json)
 

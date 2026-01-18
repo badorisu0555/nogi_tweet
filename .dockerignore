@@ -1,0 +1,12 @@
+# 開発環境・設定ファイル
+.gitignore
+docker-compose.yml
+Dockerfile
+readme.md
+__pycache__/
+.venv/
+
+# テストコードやサンプル（本番環境で不要なら）
+test/
+client.py
+sample_app.py
